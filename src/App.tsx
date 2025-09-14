@@ -223,7 +223,7 @@ function App() {
         </section>
 
         <div className="bg-white py-12 w-full z-20 opacity-100">
-          <div className="h-px bg-gray-600 max-w-4xl mx-auto"></div>
+          <div className="h-px bg-gray-300 max-w-4xl mx-auto"></div>
         </div>
 
         {/* Section 3: Immunity */}
@@ -381,7 +381,7 @@ function App() {
         </section>
 
         <div className="bg-white py-12 w-full z-20 opacity-100">
-          <div className="h-px bg-gray-600 max-w-4xl mx-auto"></div>
+          <div className="h-px bg-gray-300 max-w-4xl mx-auto"></div>
         </div>
 
         {/* Section 6: Vaccination Care */}
@@ -485,7 +485,7 @@ function App() {
         </section>
 
         <div className="bg-white py-12 w-full z-20 opacity-100">
-          <div className="h-px bg-gray-600 max-w-4xl mx-auto"></div>
+          <div className="h-px bg-gray-300 max-w-4xl mx-auto"></div>
         </div>
 
         {/* Section 9: Download Folder */}
@@ -547,7 +547,7 @@ function App() {
         </section>
 
         <div className="bg-white py-12 w-full z-20 opacity-100">
-          <div className="h-px bg-gray-600 max-w-4xl mx-auto"></div>
+          <div className="h-px bg-gray-300 max-w-4xl mx-auto"></div>
         </div>
 
         {/* Section 11: Useful Links */}
