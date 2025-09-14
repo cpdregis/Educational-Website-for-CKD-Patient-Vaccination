@@ -23,48 +23,13 @@ import {
   Droplet
 } from 'lucide-react';
 
-interface AccordionItemProps {
-  title: string;
-  children: React.ReactNode;
-  isOpen: boolean;
-  onToggle: () => void;
-  variant?: 'default' | 'danger';
-}
 
-const AccordionItem: React.FC<AccordionItemProps> = ({ 
-  title, 
-  children, 
-  isOpen, 
-  onToggle, 
-  variant = 'default' 
-}) => {
-  const bgColor = variant === 'danger' ? 'bg-red-50 border-red-200' : 'bg-gray-50 border-gray-200';
-  
-  return (
-    <div className={`border rounded-lg mb-4 ${bgColor}`}>
-      <button
-        onClick={onToggle}
-        className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-opacity-80 transition-colors"
-      >
-        <span className="font-semibold text-gray-800">{title}</span>
-        {isOpen ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
-      </button>
-      {isOpen && (
-        <div className="px-6 pb-4 text-gray-700">
-          {children}
-        </div>
-      )}
-    </div>
-  );
-};
+
+
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [openAccordions, setOpenAccordions] = useState({ recommended: true, evaluate: false, contraindicated: false });
-
-  const toggleAccordion = (key: keyof typeof openAccordions) => {
-    setOpenAccordions(prev => ({ ...prev, [key]: !prev[key] }));
-  };
+  const [activeTab, setActiveTab] = useState('recommended'); // 'recommended' as default active tab
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -312,76 +277,87 @@ function App() {
               Guia de Vacinas: O que Tomar e o que Evitar
             </h2>
             
-            <div className="space-y-4">
-              {/* Recommended Vaccines */}
-              <AccordionItem
-                title="Vacinas Recomendadas"
-                isOpen={openAccordions.recommended}
-                onToggle={() => toggleAccordion('recommended')}
+            <div className="flex space-x-1 mb-8 border-b border-gray-200">
+              <button
+                className={`py-2 px-4 text-sm font-medium ${activeTab === 'recommended' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
+                onClick={() => setActiveTab('recommended')}
               >
-                <p className="mb-4 font-medium">Além das vacinas de rotina do adulto, estas são as principais recomendações:</p>
+                Vacinas Recomendadas
+              </button>
+              <button
+                className={`py-2 px-4 text-sm font-medium ${activeTab === 'evaluate' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
+                onClick={() => setActiveTab('evaluate')}
+              >
+                Vacinas a Avaliar
+              </button>
+              <button
+                className={`py-2 px-4 text-sm font-medium ${activeTab === 'contraindicated' ? 'border-b-2 border-red-600 text-red-600' : 'text-gray-500 hover:text-gray-700'}`}
+                onClick={() => setActiveTab('contraindicated')}
+              >
+                Vacinas Contraindicadas
+              </button>
+            </div>
+
+            <div>
+              {activeTab === 'recommended' && (
                 <div className="space-y-4">
-                  <div className="border-l-4 border-green-400 pl-4">
-                    <h4 className="font-semibold text-green-700">Hepatite B</h4>
-                    <p className="text-gray-600">Essencial devido ao risco de exposição no ambiente de diálise. O esquema é especial, com quatro doses e o dobro da dosagem padrão. A verificação da resposta com exame de sangue é obrigatória.</p>
-                  </div>
-                  
-                  <div className="border-l-4 border-green-400 pl-4">
-                    <h4 className="font-semibold text-green-700">Influenza (Gripe)</h4>
-                    <p className="text-gray-600">Vacinação anual, fortemente recomendada para prevenir complicações respiratórias graves.</p>
-                  </div>
-                  
-                  <div className="border-l-4 border-green-400 pl-4">
-                    <h4 className="font-semibold text-green-700">Pneumocócica</h4>
-                    <p className="text-gray-600">Protege contra a doença pneumocócica invasiva. O esquema sequencial é o mais indicado (VPC13 seguida da VPP23), com um reforço da VPP23 após cinco anos.</p>
-                  </div>
-                  
-                  <div className="border-l-4 border-green-400 pl-4">
-                    <h4 className="font-semibold text-green-700">COVID-19</h4>
-                    <p className="text-gray-600">Pacientes com DRC são grupo prioritário e devem seguir o esquema vacinal e as doses de reforço recomendadas pelo Programa Nacional de Imunizações (PNI).</p>
-                  </div>
-                  
-                  <div className="border-l-4 border-green-400 pl-4">
-                    <h4 className="font-semibold text-green-700">Difteria, Tétano e Coqueluche (dTpa)</h4>
-                    <p className="text-gray-600">Manter a proteção contra tétano e difteria, com reforço a cada 10 anos. Pelo menos uma dessas doses deve ser com a vacina dTpa, que também protege contra a coqueluche.</p>
-                  </div>
-                  
-                  <div className="border-l-4 border-green-400 pl-4">
-                    <h4 className="font-semibold text-green-700">Haemophilus influenzae tipo b (Hib)</h4>
-                    <p className="text-gray-600">Recomendada especialmente para candidatos a transplante renal que não foram vacinados na infância.</p>
+                  <p className="mb-4 font-medium">Além das vacinas de rotina do adulto, estas são as principais recomendações:</p>
+                  <div className="space-y-4">
+                    <div className="border-l-4 border-green-400 pl-4">
+                      <h4 className="font-semibold text-green-700">Hepatite B</h4>
+                      <p className="text-gray-600">Essencial devido ao risco de exposição no ambiente de diálise. O esquema é especial, com quatro doses e o dobro da dosagem padrão. A verificação da resposta com exame de sangue é obrigatória.</p>
+                    </div>
+                    
+                    <div className="border-l-4 border-green-400 pl-4">
+                      <h4 className="font-semibold text-green-700">Influenza (Gripe)</h4>
+                      <p className="text-gray-600">Vacinação anual, fortemente recomendada para prevenir complicações respiratórias graves.</p>
+                    </div>
+                    
+                    <div className="border-l-4 border-green-400 pl-4">
+                      <h4 className="font-semibold text-green-700">Pneumocócica</h4>
+                      <p className="text-gray-600">Protege contra a doença pneumocócica invasiva. O esquema sequencial é o mais indicado (VPC13 seguida da VPP23), com um reforço da VPP23 após cinco anos.</p>
+                    </div>
+                    
+                    <div className="border-l-4 border-green-400 pl-4">
+                      <h4 className="font-semibold text-green-700">COVID-19</h4>
+                      <p className="text-gray-600">Pacientes com DRC são grupo prioritário e devem seguir o esquema vacinal e as doses de reforço recomendadas pelo Programa Nacional de Imunizações (PNI).</p>
+                    </div>
+                    
+                    <div className="border-l-4 border-green-400 pl-4">
+                      <h4 className="font-semibold text-green-700">Difteria, Tétano e Coqueluche (dTpa)</h4>
+                      <p className="text-gray-600">Manter a proteção contra tétano e difteria, com reforço a cada 10 anos. Pelo menos uma dessas doses deve ser com a vacina dTpa, que também protege contra a coqueluche.</p>
+                    </div>
+                    
+                    <div className="border-l-4 border-green-400 pl-4">
+                      <h4 className="font-semibold text-green-700">Haemophilus influenzae tipo b (Hib)</h4>
+                      <p className="text-gray-600">Recomendada especialmente para candidatos a transplante renal que não foram vacinados na infância.</p>
+                    </div>
                   </div>
                 </div>
-              </AccordionItem>
+              )}
 
-              {/* Vaccines to Evaluate */}
-              <AccordionItem
-                title="Vacinas a Avaliar com seu Médico"
-                isOpen={openAccordions.evaluate}
-                onToggle={() => toggleAccordion('evaluate')}
-              >
-                <p className="mb-4">Em situações muito específicas, como em pacientes com comprometimento imune leve e antes de um transplante renal, o uso de algumas vacinas de vírus vivo pode ser considerado pelo médico após uma avaliação rigorosa de risco-benefício. São elas:</p>
-                <ul className="list-disc list-inside space-y-2">
-                  <li>Tríplice Viral (Sarampo, Caxumba e Rubéola)</li>
-                  <li>Varicela</li>
-                </ul>
-              </AccordionItem>
+              {activeTab === 'evaluate' && (
+                <div className="space-y-4">
+                  <p className="mb-4">Em situações muito específicas, como em pacientes com comprometimento imune leve e antes de um transplante renal, o uso de algumas vacinas de vírus vivo pode ser considerado pelo médico após uma avaliação rigorosa de risco-benefício. São elas:</p>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>Tríplice Viral (Sarampo, Caxumba e Rubéola)</li>
+                    <li>Varicela</li>
+                  </ul>
+                </div>
+              )}
 
-              {/* Contraindicated Vaccines */}
-              <AccordionItem
-                title="Vacinas Contraindicadas"
-                isOpen={openAccordions.contraindicated}
-                onToggle={() => toggleAccordion('contraindicated')}
-                variant="danger"
-              >
-                <p className="mb-4">Como regra geral, vacinas feitas com vírus ou bactérias vivos atenuados são contraindicadas. O sistema imune pode não ser capaz de controlar a replicação do agente da vacina, o que poderia causar a própria doença que se deseja evitar. Evite as seguintes vacinas:</p>
-                <ul className="list-disc list-inside space-y-2">
-                  <li>Tríplice Viral (Sarampo, Caxumba e Rubéola)</li>
-                  <li>Varicela</li>
-                  <li>Febre Amarela</li>
-                  <li>Poliomielite oral (VOP - a gotinha)</li>
-                  <li>BCG</li>
-                </ul>
-              </AccordionItem>
+              {activeTab === 'contraindicated' && (
+                <div className="space-y-4">
+                  <p className="mb-4">Como regra geral, vacinas feitas com vírus ou bactérias vivos atenuados são contraindicadas. O sistema imune pode não ser capaz de controlar a replicação do agente da vacina, o que poderia causar a própria doença que se deseja evitar. Evite as seguintes vacinas:</p>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>Tríplice Viral (Sarampo, Caxumba e Rubéola)</li>
+                    <li>Varicela</li>
+                    <li>Febre Amarela</li>
+                    <li>Poliomielite oral (VOP - a gotinha)</li>
+                    <li>BCG</li>
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
         </section>
