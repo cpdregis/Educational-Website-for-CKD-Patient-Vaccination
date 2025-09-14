@@ -279,19 +279,19 @@ function App() {
             
             <div className="flex space-x-1 mb-8 border-b border-gray-200">
               <button
-                className={`py-2 px-4 text-sm font-medium ${activeTab === 'recommended' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
+                className={`py-2 px-4 text-sm font-bold ${activeTab === 'recommended' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
                 onClick={() => setActiveTab('recommended')}
               >
                 Vacinas Recomendadas
               </button>
               <button
-                className={`py-2 px-4 text-sm font-medium ${activeTab === 'evaluate' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
+                className={`py-2 px-4 text-sm font-bold ${activeTab === 'evaluate' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
                 onClick={() => setActiveTab('evaluate')}
               >
                 Vacinas a Avaliar
               </button>
               <button
-                className={`py-2 px-4 text-sm font-medium ${activeTab === 'contraindicated' ? 'border-b-2 border-red-600 text-red-600' : 'text-gray-500 hover:text-gray-700'}`}
+                className={`py-2 px-4 text-sm font-bold ${activeTab === 'contraindicated' ? 'border-b-2 border-red-600 text-red-600' : 'text-gray-500 hover:text-gray-700'}`}
                 onClick={() => setActiveTab('contraindicated')}
               >
                 Vacinas Contraindicadas
@@ -301,7 +301,7 @@ function App() {
             <div>
               {activeTab === 'recommended' && (
                 <div className="space-y-4">
-                  <p className="mb-4 font-medium">Além das vacinas de rotina do adulto, estas são as principais recomendações:</p>
+                  <p className="mb-4 font-medium text-gray-600">Além das vacinas de rotina do adulto, estas são as principais recomendações:</p>
                   <div className="space-y-4">
                     <div className="border-l-4 border-green-400 pl-4">
                       <h4 className="font-semibold text-green-700">Hepatite B</h4>
@@ -338,7 +338,7 @@ function App() {
 
               {activeTab === 'evaluate' && (
                 <div className="space-y-4">
-                  <p className="mb-4 font-medium">Em situações muito específicas, como em pacientes com comprometimento imune leve e antes de um transplante renal, o uso de algumas vacinas de vírus vivo pode ser considerado pelo médico após uma avaliação rigorosa de risco-benefício. São elas:</p>
+                  <p className="mb-4 font-medium text-gray-600">Em situações muito específicas, como em pacientes com comprometimento imune leve e antes de um transplante renal, o uso de algumas vacinas de vírus vivo pode ser considerado pelo médico após uma avaliação rigorosa de risco-benefício. São elas:</p>
                   <div className="border-l-4 border-yellow-400 pl-4">
                     <h4 className="font-semibold text-yellow-700">Tríplice Viral (Sarampo, Caxumba e Rubéola)</h4>
                     <p className="text-gray-600">Vacina de vírus vivo. Avaliar com seu médico.</p>
@@ -353,7 +353,7 @@ function App() {
 
               {activeTab === 'contraindicated' && (
                 <div className="space-y-4">
-                  <p className="mb-4 font-medium">Como regra geral, vacinas feitas com vírus ou bactérias vivos atenuados são contraindicadas. O sistema imune pode não ser capaz de controlar a replicação do agente da vacina, o que poderia causar a própria doença que se deseja evitar. Evite as seguintes vacinas:</p>
+                  <p className="mb-4 font-medium text-gray-600">Como regra geral, vacinas feitas com vírus ou bactérias vivos atenuados são contraindicadas. O sistema imune pode não ser capaz de controlar a replicação do agente da vacina, o que poderia causar a própria doença que se deseja evitar. Evite as seguintes vacinas:</p>
                   <div className="border-l-4 border-red-400 pl-4">
                     <h4 className="font-semibold text-red-700">Tríplice Viral (Sarampo, Caxumba e Rubéola)</h4>
                     <p className="text-gray-600">Vacina de vírus vivo atenuado. Contraindicada.</p>
