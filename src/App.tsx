@@ -213,6 +213,7 @@ function App() {
         {/* Section 2: Understanding CKD */}
         <section id="o-que-e-drc" className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <Activity className="w-12 h-12 text-blue-600 mx-auto mb-4" />
             <h2 className="text-3xl font-bold text-gray-800 mb-8">
               O que é a Doença Renal Crônica (DRC)?
             </h2>
