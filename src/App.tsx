@@ -108,7 +108,7 @@ function App() {
           muted
           loop
           className="w-full h-full object-cover"
-          src="background.mp4"
+          src="/background.mp4"
         />
         <div className="absolute inset-0 bg-black bg-opacity-20" />
       </div>
@@ -492,15 +492,10 @@ function App() {
               
               <div className="text-center">
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-6">
-                  <img
-                    src="folder.jpg"
-                    alt="Folder sobre vacinação para pacientes em hemodiálise"
-                    className="w-full h-auto"
-                    style={{ aspectRatio: '297/210' }}
-                  />
+                  
                 </div>
                 <a
-                  href="folder.pdf"
+                  href="/folder.pdf"
                   download
                   className="inline-flex items-center justify-center w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg transition-colors"
                 >
