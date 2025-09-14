@@ -18,7 +18,9 @@ import {
   UserCheck,
   Syringe,
   Building,
-  FileText
+  FileText,
+  HeartPulse,
+  Droplet
 } from 'lucide-react';
 
 interface AccordionItemProps {
@@ -243,16 +245,16 @@ function App() {
               </p>
             </div>
             
-            <div className="space-y-6 mb-8">
-              <div className="flex items-start space-x-4 bg-gray-50 p-6 rounded-lg">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="flex items-start space-x-4 bg-gray-50 p-6 rounded-lg border border-blue-200">
                 <Shield className="w-8 h-8 text-red-500 flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-2">Disfunção Imunológica</h3>
-                  <p className="text-gray-600">A uremia (acúmulo de toxinas no sangue) causa uma deficiência nas respostas de defesa do corpo.</p>
+                  <p className="text-gray-600">A uremia (acúmulo de toxinas no sangue), que ocorre devido a deficiência de filtração e eliminação renal, causa uma deficiência nas respostas de defesa do corpo, o que faz com que esses paciente fiquem mais vulnerávieis a infecções.</p>
                 </div>
               </div>
               
-              <div className="flex items-start space-x-4 bg-gray-50 p-6 rounded-lg">
+              <div className="flex items-start space-x-4 bg-gray-50 p-6 rounded-lg border border-blue-200">
                 <Activity className="w-8 h-8 text-red-500 flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-2">Exposição no Tratamento</h3>
@@ -276,23 +278,20 @@ function App() {
                 Seus rins precisam ser protegidos!
               </h2>
               <p className="text-lg text-blue-100 mb-6">
-                A vacinação não apenas previne infecções, mas também protege diretamente a função renal que você ainda tem. Os rins de um paciente com DRC são muito vulneráveis a novos problemas.
-              </p>
-              <p className="text-lg text-blue-100 mb-8">
-                Uma infecção grave, como uma pneumonia, pode causar alterações perigosas no corpo:
+                A vacinação não apenas previne infecções, mas também protege diretamente a função renal que você ainda tem. Os rins de um paciente com DRC são muito vulneráveis a novos problemas. Uma infecção grave, como uma pneumonia, pode causar alterações perigosas no corpo como:
               </p>
             </div>
             
-            <div className="space-y-6 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="flex items-start space-x-4 bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
-                <AlertTriangle className="w-8 h-8 text-yellow-300 flex-shrink-0 mt-1" />
+                <HeartPulse className="w-8 h-8 text-yellow-300 flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-white">Queda da pressão arterial (hipotensão).</p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-4 bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
-                <AlertTriangle className="w-8 h-8 text-yellow-300 flex-shrink-0 mt-1" />
+                <Droplet className="w-8 h-8 text-yellow-300 flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-white">Desidratação e intensa resposta inflamatória.</p>
                 </div>
