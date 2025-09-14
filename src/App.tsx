@@ -403,7 +403,7 @@ function App() {
             </p>
             
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-blue-50 p-6 rounded-lg">
+              <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                   <div>
@@ -413,7 +413,7 @@ function App() {
                 </div>
               </div>
               
-              <div className="bg-blue-50 p-6 rounded-lg">
+              <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
                 <div className="flex items-start space-x-3">
                   <Calendar className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                   <div>
@@ -423,7 +423,7 @@ function App() {
                 </div>
               </div>
               
-              <div className="bg-blue-50 p-6 rounded-lg">
+              <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
                 <div className="flex items-start space-x-3">
                   <Activity className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                   <div>
@@ -433,7 +433,7 @@ function App() {
                 </div>
               </div>
               
-              <div className="bg-blue-50 p-6 rounded-lg">
+              <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
                 <div className="flex items-start space-x-3">
                   <Shield className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                   <div>
@@ -443,7 +443,7 @@ function App() {
                 </div>
               </div>
               
-              <div className="bg-blue-50 p-6 rounded-lg md:col-span-2">
+              <div className="bg-blue-50 p-6 rounded-lg md:col-span-2 border border-blue-200">
                 <div className="flex items-start space-x-3">
                   <Users className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                   <div>
