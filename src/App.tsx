@@ -15,7 +15,10 @@ import {
   ExternalLink,
   Stethoscope,
   Activity,
-  UserCheck
+  UserCheck,
+  Syringe,
+  Building,
+  FileText
 } from 'lucide-react';
 
 interface AccordionItemProps {
@@ -231,6 +234,7 @@ function App() {
         <section id="imunidade" className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
+              <Shield className="w-12 h-12 text-blue-600 mx-auto mb-4" />
               <h2 className="text-3xl font-bold text-gray-800 mb-8">
                 Sua Imunidade Precisa de um Reforço Extra!
               </h2>
@@ -267,6 +271,7 @@ function App() {
         <section id="protecao-renal" className="py-16 bg-blue-600 bg-opacity-90">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
+              <Heart className="w-12 h-12 text-white mx-auto mb-4" />
               <h2 className="text-3xl font-bold text-white mb-8">
                 Seus rins precisam ser protegidos!
               </h2>
@@ -303,6 +308,7 @@ function App() {
         {/* Section 5: Vaccine Guide */}
         <section id="guia-vacinas" className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <Syringe className="w-12 h-12 text-blue-600 mx-auto mb-4" />
             <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
               Guia de Vacinas: O que Tomar e o que Evitar
             </h2>
@@ -388,6 +394,7 @@ function App() {
         {/* Section 6: Vaccination Care */}
         <section id="cuidados" className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <Stethoscope className="w-12 h-12 text-blue-600 mx-auto mb-4" />
             <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
               O Cuidado da Vacinação: O que é Diferente para Você?
             </h2>
@@ -453,6 +460,7 @@ function App() {
         {/* Section 7: Planning */}
         <section id="planejamento" className="py-16 bg-blue-600 bg-opacity-90">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <Calendar className="w-12 h-12 text-white mx-auto mb-4" />
             <h2 className="text-3xl font-bold text-white mb-12 text-center">
               Planejando sua Vacinação: Qual a Hora Certa?
             </h2>
@@ -475,6 +483,7 @@ function App() {
         {/* Section 8: SUS Access */}
         <section id="acesso-sus" className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <Building className="w-12 h-12 text-blue-600 mx-auto mb-4" />
             <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
               Acesso pelo SUS: As Vacinas São Gratuitas?
             </h2>
@@ -492,6 +501,7 @@ function App() {
         {/* Section 9: Download Folder */}
         <section id="baixar-folder" className="py-16 bg-gray-50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <FileText className="w-12 h-12 text-blue-600 mx-auto mb-4" />
             <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
               Baixe nosso folder
             </h2>
@@ -519,6 +529,10 @@ function App() {
             </div>
           </div>
         </section>
+
+        <div className="bg-white py-12 w-full z-20 opacity-100">
+          <div className="h-px bg-gray-300 max-w-4xl mx-auto"></div>
+        </div>
 
         {/* Section 10: References */}
         <section id="referencias" className="py-16 bg-white">
