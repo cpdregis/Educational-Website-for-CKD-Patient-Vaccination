@@ -575,66 +575,66 @@ function App() {
                 href="https://www.gov.br/saude/pt-br/vacinacao/grupos-especiais"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white hover:bg-gray-50 border border-gray-200 rounded-lg p-6 text-center transition-colors group"
+                className="bg-blue-600 hover:bg-blue-700 rounded-lg p-6 text-center transition-colors group no-underline"
               >
-                <UserCheck className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-gray-800 mb-2">Vacinas para grupos especiais</h3>
-                <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-blue-600 mx-auto" />
+                <UserCheck className="w-12 h-12 text-white mx-auto mb-4" />
+                <h3 className="font-semibold text-white mb-2 no-underline">Vacinas para grupos especiais</h3>
+                <ExternalLink className="w-4 h-4 text-white group-hover:text-white mx-auto" />
               </a>
               
               <a
                 href="https://www.gov.br/saude/pt-br/vacinacao/calendario"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white hover:bg-gray-50 border border-gray-200 rounded-lg p-6 text-center transition-colors group"
+                className="bg-blue-600 hover:bg-blue-700 rounded-lg p-6 text-center transition-colors group no-underline"
               >
-                <Calendar className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-gray-800 mb-2">Calendário de Vacinação</h3>
-                <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-blue-600 mx-auto" />
+                <Calendar className="w-12 h-12 text-white mx-auto mb-4" />
+                <h3 className="font-semibold text-white mb-2 no-underline">Calendário de Vacinação</h3>
+                <ExternalLink className="w-4 h-4 text-white group-hover:text-white mx-auto" />
               </a>
               
               <a
                 href="https://www.gov.br/saude/pt-br/vacinacao/esavi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white hover:bg-gray-50 border border-gray-200 rounded-lg p-6 text-center transition-colors group"
+                className="bg-blue-600 hover:bg-blue-700 rounded-lg p-6 text-center transition-colors group no-underline"
               >
-                <Shield className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-gray-800 mb-2">Segurança das Vacinas</h3>
-                <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-blue-600 mx-auto" />
+                <Shield className="w-12 h-12 text-white mx-auto mb-4" />
+                <h3 className="font-semibold text-white mb-2 no-underline">Segurança das Vacinas</h3>
+                <ExternalLink className="w-4 h-4 text-white group-hover:text-white mx-auto" />
               </a>
               
               <a
                 href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2024/manual-dos-centros-de-referencia-para-imunobiologicos-especiais-6a-edicao/view"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white hover:bg-gray-50 border border-gray-200 rounded-lg p-6 text-center transition-colors group"
+                className="bg-blue-600 hover:bg-blue-700 rounded-lg p-6 text-center transition-colors group no-underline"
               >
-                <Download className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-gray-800 mb-2">Manual do CRIE 6ª Edição</h3>
-                <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-blue-600 mx-auto" />
+                <Download className="w-12 h-12 text-white mx-auto mb-4" />
+                <h3 className="font-semibold text-white mb-2 no-underline">Manual do CRIE 6ª Edição</h3>
+                <ExternalLink className="w-4 h-4 text-white group-hover:text-white mx-auto" />
               </a>
               
               <a
                 href="https://meususdigital.saude.gov.br/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white hover:bg-gray-50 border border-gray-200 rounded-lg p-6 text-center transition-colors group"
+                className="bg-blue-600 hover:bg-blue-700 rounded-lg p-6 text-center transition-colors group no-underline"
               >
-                <Heart className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-gray-800 mb-2">Meu SUS Digital</h3>
-                <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-blue-600 mx-auto" />
+                <Heart className="w-12 h-12 text-white mx-auto mb-4" />
+                <h3 className="font-semibold text-white mb-2 no-underline">Meu SUS Digital</h3>
+                <ExternalLink className="w-4 h-4 text-white group-hover:text-white mx-auto" />
               </a>
               
               <a
                 href="https://www.gov.br/saude/pt-br/canais-de-atendimento/ouvsus"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white hover:bg-gray-50 border border-gray-200 rounded-lg p-6 text-center transition-colors group"
+                className="bg-blue-600 hover:bg-blue-700 rounded-lg p-6 text-center transition-colors group no-underline"
               >
-                <Users className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-gray-800 mb-2">Ouvidoria Geral do SUS</h3>
-                <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-blue-600 mx-auto" />
+                <Users className="w-12 h-12 text-white mx-auto mb-4" />
+                <h3 className="font-semibold text-white mb-2 no-underline">Ouvidoria Geral do SUS</h3>
+                <ExternalLink className="w-4 h-4 text-white group-hover:text-white mx-auto" />
               </a>
             </div>
           </div>
