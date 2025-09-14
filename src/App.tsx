@@ -221,7 +221,7 @@ function App() {
               O que é a Doença Renal Crônica (DRC)?
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              É uma condição onde os rins apresentam anomalias em sua estrutura ou funcionamento por mais de três meses, afetando a saúde de forma geral. Quando a DRC avança para seu estágio final, a função renal se torna insuficiente para manter o equilíbrio do corpo. Nesse ponto, é necessária a Terapia Renal Substitutiva (TRS), e a hemodiálise é uma das formas mais comuns de tratamento. Pacientes em hemodiálise são especialmente vulneráveis, e a prevenção de infecções através da vacinação é uma prioridade.
+              É uma condição onde os rins apresentam anomalias em sua estrutura ou funcionamento por mais de três meses, afetando a saúde de forma geral. Quando a DRC avança para seu estágio final, a função renal se torna insuficiente para manter o equilíbrio do corpo. Nesse ponto, é necessária a <strong>Terapia Renal Substitutiva (TRS)</strong>, e a hemodiálise é uma das formas mais comuns de tratamento. Pacientes em hemodiálise são especialmente vulneráveis, e a prevenção de infecções através da vacinação é uma prioridade.
             </p>
           </div>
         </section>
@@ -239,7 +239,7 @@ function App() {
                 Sua Imunidade Precisa de um Reforço Extra!
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Pacientes em hemodiálise têm uma suscetibilidade muito maior a infecções, que são uma das principais causas de complicações e mortalidade nesse grupo.
+                Pacientes em hemodiálise têm uma suscetibilidade muito maior a infecções, que são uma das principais causas de complicações e mortalidade nesse grupo. Isso acontece por dois motivos principais:
               </p>
             </div>
             
@@ -514,17 +514,19 @@ function App() {
               </div>
               
               <div className="text-center">
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-6">
+                <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-6 w-3/4 mx-auto">
                   <img src="/folder.jpg" alt="Folder sobre vacinação para pacientes em hemodiálise" className="w-full h-auto object-cover" />
                 </div>
-                <a
-                  href="/folder.pdf"
-                  download
-                  className="inline-flex items-center justify-center w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg transition-colors"
-                >
-                  <Download className="w-5 h-5 mr-2" />
-                  Download
-                </a>
+                <div className="w-3/4 mx-auto">
+                  <a
+                    href="/folder.pdf"
+                    download
+                    className="inline-flex items-center justify-center w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg transition-colors"
+                  >
+                    <Download className="w-5 h-5 mr-2" />
+                    Download
+                  </a>
+                </div>
               </div>
             </div>
           </div>
