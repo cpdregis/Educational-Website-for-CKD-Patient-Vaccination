@@ -316,7 +316,7 @@ function App() {
             <div className="space-y-4">
               {/* Recommended Vaccines */}
               <AccordionItem
-                title="✓ Vacinas Recomendadas"
+                title="Vacinas Recomendadas"
                 isOpen={openAccordions.recommended}
                 onToggle={() => toggleAccordion('recommended')}
               >
@@ -356,7 +356,7 @@ function App() {
 
               {/* Vaccines to Evaluate */}
               <AccordionItem
-                title="? Vacinas a Avaliar com seu Médico"
+                title="Vacinas a Avaliar com seu Médico"
                 isOpen={openAccordions.evaluate}
                 onToggle={() => toggleAccordion('evaluate')}
               >
@@ -369,7 +369,7 @@ function App() {
 
               {/* Contraindicated Vaccines */}
               <AccordionItem
-                title="✗ Vacinas Contraindicadas"
+                title="Vacinas Contraindicadas"
                 isOpen={openAccordions.contraindicated}
                 onToggle={() => toggleAccordion('contraindicated')}
                 variant="danger"
@@ -503,7 +503,7 @@ function App() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <FileText className="w-12 h-12 text-blue-600 mx-auto mb-4" />
             <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
-              Baixe nosso folder
+              Baixe o folder e Ajude na Divulgação!
             </h2>
             
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -530,10 +530,6 @@ function App() {
           </div>
         </section>
 
-        <div className="bg-white py-12 w-full z-20 opacity-100">
-          <div className="h-px bg-gray-300 max-w-4xl mx-auto"></div>
-        </div>
-
         {/* Section 10: References */}
         <section id="referencias" className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -541,22 +537,22 @@ function App() {
               Referências Bibliográficas
             </h2>
             
-            <div className="space-y-4 text-sm text-gray-600">
-              <p>BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde e Ambiente. Departamento do Programa Nacional de Imunizações. Calendário Nacional de Vacinação ano 2025 ciclo de vida adulto (25 anos a 59 anos de idade). Brasília, DF: Ministério da Saúde, 2025.</p>
+            <div className="space-y-4 text-lg text-gray-600">
+              <p>BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde e Ambiente. Departamento do Programa Nacional de Imunizações. <strong>Calendário Nacional de Vacinação ano 2025 ciclo de vida adulto (25 anos a 59 anos de idade).</strong> Brasília, DF: Ministério da Saúde, 2025.</p>
               
-              <p>BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde e Ambiente. Departamento do Programa Nacional de Imunizações. Estratégia de vacinação contra a covid-19: 2ª edição. Brasília, DF: Ministério da Saúde, 2024.</p>
+              <p>BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde e Ambiente. Departamento do Programa Nacional de Imunizações. <strong>Estratégia de vacinação contra a covid-19: 2ª edição.</strong> Brasília, DF: Ministério da Saúde, 2024.</p>
               
-              <p>BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde e Ambiente. Departamento de Imunizações e Doenças Imunopreveníveis. Manual dos Centros de Referência para Imunobiológicos Especiais: 6ª edição. Brasília, DF: Ministério da Saúde, 2023.</p>
+              <p>BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde e Ambiente. Departamento de Imunizações e Doenças Imunopreveníveis. <strong>Manual dos Centros de Referência para Imunobiológicos Especiais: 6ª edição.</strong> Brasília, DF: Ministério da Saúde, 2023.</p>
               
-              <p>LEVEY, A. S.; INKER, L. A. Definition and staging of chronic kidney disease in adults. UpToDate, 2025. Disponível em: https://www.uptodate.com. Acesso em 06 de setembro de 2025.</p>
+              <p>LEVEY, A. S.; INKER, L. A. <strong>Definition and staging of chronic kidney disease in adults.</strong> UpToDate, 2025. Disponível em: https://www.uptodate.com. Acesso em 06 de setembro de 2025.</p>
               
-              <p>PALEVSKY, P. M.; RADHAKRISHNAN, J. COVID-19: Issues related to end-stage kidney disease. UpToDate, 2025. Disponível em: https://www.uptodate.com. Acesso em 06 de setembro de 2025.</p>
+              <p>PALEVSKY, P. M.; RADHAKRISHNAN, J. <strong>COVID-19: Issues related to end-stage kidney disease.</strong> UpToDate, 2025. Disponível em: https://www.uptodate.com. Acesso em 06 de setembro de 2025.</p>
               
-              <p>PUSPITASARI, M. et al. Outcomes of vaccinations against respiratory diseases in patients with end-stage renal disease undergoing hemodialysis: A systematic review and meta-analysis. PLoS ONE, v. 18, n. 2, p. e0281160, fev. 2023.</p>
+              <p>PUSPITASARI, M. et al. <strong>Outcomes of vaccinations against respiratory diseases in patients with end-stage renal disease undergoing hemodialysis: A systematic review and meta-analysis.</strong> PLoS ONE, v. 18, n. 2, p. e0281160, fev. 2023.</p>
               
-              <p>SOCIEDADE BRASILEIRA DE IMUNIZAÇÕES. Calendários de vacinação SBIm pacientes especiais 2023-2024. São Paulo: SBIm, 2023.</p>
+              <p>SOCIEDADE BRASILEIRA DE IMUNIZAÇÕES. <strong>Calendários de vacinação SBIm pacientes especiais 2023-2024.</strong> São Paulo: SBIm, 2023.</p>
               
-              <p>WHITAKER, K. Immunizations in patients with end-stage kidney disease. UpToDate, 2025. Disponível em: https://www.uptodate.com. Acesso em 06 de setembro de 2025.</p>
+              <p>WHITAKER, K. <strong>Immunizations in patients with end-stage kidney disease.</strong> UpToDate, 2025. Disponível em: https://www.uptodate.com. Acesso em 06 de setembro de 2025.</p>
             </div>
           </div>
         </section>
