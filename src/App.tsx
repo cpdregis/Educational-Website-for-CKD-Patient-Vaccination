@@ -492,7 +492,7 @@ function App() {
               
               <div className="text-center">
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-6">
-                  
+                  <img src="/folder.jpg" alt="Folder sobre vacinação para pacientes em hemodiálise" className="w-full h-auto object-cover" />
                 </div>
                 <a
                   href="/folder.pdf"
