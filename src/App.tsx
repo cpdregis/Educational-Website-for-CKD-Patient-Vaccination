@@ -338,24 +338,46 @@ function App() {
 
               {activeTab === 'evaluate' && (
                 <div className="space-y-4">
-                  <p className="mb-4">Em situações muito específicas, como em pacientes com comprometimento imune leve e antes de um transplante renal, o uso de algumas vacinas de vírus vivo pode ser considerado pelo médico após uma avaliação rigorosa de risco-benefício. São elas:</p>
-                  <ul className="list-disc list-inside space-y-2">
-                    <li>Tríplice Viral (Sarampo, Caxumba e Rubéola)</li>
-                    <li>Varicela</li>
-                  </ul>
+                  <p className="mb-4 font-medium">Em situações muito específicas, como em pacientes com comprometimento imune leve e antes de um transplante renal, o uso de algumas vacinas de vírus vivo pode ser considerado pelo médico após uma avaliação rigorosa de risco-benefício. São elas:</p>
+                  <div className="border-l-4 border-yellow-400 pl-4">
+                    <h4 className="font-semibold text-yellow-700">Tríplice Viral (Sarampo, Caxumba e Rubéola)</h4>
+                    <p className="text-gray-600">Vacina de vírus vivo. Avaliar com seu médico.</p>
+                  </div>
+                  
+                  <div className="border-l-4 border-yellow-400 pl-4">
+                    <h4 className="font-semibold text-yellow-700">Varicela</h4>
+                    <p className="text-gray-600">Vacina de vírus vivo. Avaliar com seu médico.</p>
+                  </div>
                 </div>
               )}
 
               {activeTab === 'contraindicated' && (
                 <div className="space-y-4">
-                  <p className="mb-4">Como regra geral, vacinas feitas com vírus ou bactérias vivos atenuados são contraindicadas. O sistema imune pode não ser capaz de controlar a replicação do agente da vacina, o que poderia causar a própria doença que se deseja evitar. Evite as seguintes vacinas:</p>
-                  <ul className="list-disc list-inside space-y-2">
-                    <li>Tríplice Viral (Sarampo, Caxumba e Rubéola)</li>
-                    <li>Varicela</li>
-                    <li>Febre Amarela</li>
-                    <li>Poliomielite oral (VOP - a gotinha)</li>
-                    <li>BCG</li>
-                  </ul>
+                  <p className="mb-4 font-medium">Como regra geral, vacinas feitas com vírus ou bactérias vivos atenuados são contraindicadas. O sistema imune pode não ser capaz de controlar a replicação do agente da vacina, o que poderia causar a própria doença que se deseja evitar. Evite as seguintes vacinas:</p>
+                  <div className="border-l-4 border-red-400 pl-4">
+                    <h4 className="font-semibold text-red-700">Tríplice Viral (Sarampo, Caxumba e Rubéola)</h4>
+                    <p className="text-gray-600">Vacina de vírus vivo atenuado. Contraindicada.</p>
+                  </div>
+                  
+                  <div className="border-l-4 border-red-400 pl-4">
+                    <h4 className="font-semibold text-red-700">Varicela</h4>
+                    <p className="text-gray-600">Vacina de vírus vivo atenuado. Contraindicada.</p>
+                  </div>
+                  
+                  <div className="border-l-4 border-red-400 pl-4">
+                    <h4 className="font-semibold text-red-700">Febre Amarela</h4>
+                    <p className="text-gray-600">Vacina de vírus vivo atenuado. Contraindicada.</p>
+                  </div>
+                  
+                  <div className="border-l-4 border-red-400 pl-4">
+                    <h4 className="font-semibold text-red-700">Poliomielite oral (VOP - a gotinha)</h4>
+                    <p className="text-gray-600">Vacina de vírus vivo atenuado. Contraindicada.</p>
+                  </div>
+                  
+                  <div className="border-l-4 border-red-400 pl-4">
+                    <h4 className="font-semibold text-red-700">BCG</h4>
+                    <p className="text-gray-600">Vacina de bactérias vivas atenuadas. Contraindicada.</p>
+                  </div>
                 </div>
               )}
             </div>
