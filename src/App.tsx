@@ -222,7 +222,9 @@ function App() {
           </div>
         </section>
 
-        <div className="bg-white py-12 w-full z-20 opacity-100"></div>
+        <div className="bg-white py-12 w-full z-20 opacity-100">
+          <div className="h-px bg-gray-600 max-w-4xl mx-auto"></div>
+        </div>
 
         {/* Section 3: Immunity */}
         <section id="imunidade" className="py-16 bg-white">
@@ -378,7 +380,9 @@ function App() {
           </div>
         </section>
 
-        <div className="bg-white py-12 w-full z-20 opacity-100"></div>
+        <div className="bg-white py-12 w-full z-20 opacity-100">
+          <div className="h-px bg-gray-600 max-w-4xl mx-auto"></div>
+        </div>
 
         {/* Section 6: Vaccination Care */}
         <section id="cuidados" className="py-16 bg-white">
@@ -480,7 +484,9 @@ function App() {
           </div>
         </section>
 
-        <div className="bg-white py-12 w-full z-20 opacity-100"></div>
+        <div className="bg-white py-12 w-full z-20 opacity-100">
+          <div className="h-px bg-gray-600 max-w-4xl mx-auto"></div>
+        </div>
 
         {/* Section 9: Download Folder */}
         <section id="baixar-folder" className="py-16 bg-gray-50">
@@ -540,7 +546,9 @@ function App() {
           </div>
         </section>
 
-        <div className="bg-white py-12 w-full z-20 opacity-100"></div>
+        <div className="bg-white py-12 w-full z-20 opacity-100">
+          <div className="h-px bg-gray-600 max-w-4xl mx-auto"></div>
+        </div>
 
         {/* Section 11: Useful Links */}
         <section id="links-uteis" className="py-16 bg-gray-50">
