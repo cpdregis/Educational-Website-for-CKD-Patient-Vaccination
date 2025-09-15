@@ -86,7 +86,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
-              <Stethoscope className="w-8 h-8 text-blue-600 mr-3" />
+              <Syringe className="w-8 h-8 text-blue-600 mr-3" />
             </div>
             
             {/* Desktop Navigation */}
@@ -527,7 +527,7 @@ function App() {
         </section>
 
         <div className="bg-white py-12 w-full z-20 opacity-100">
-          <div className="h-px bg-blue-600 max-w-4xl mx-auto"></div>
+          <div className="h-px bg-gray-300 max-w-4xl mx-auto"></div>
         </div>
 
         {/* Section 10: References */}
@@ -641,8 +641,8 @@ function App() {
         {/* Footer */}
         <footer className="bg-gray-800 text-white py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p className="text-gray-300">
-              Este site tem caráter educativo e não substitui a orientação médica.
+            <p className="text-gray-300 text-center">
+              Este site tem caráter educativo e foi criado por estudantes do curso de Medicina da Universidade Federal da Paraíba (UFPB), sob supervisão de professores nefrologistas.
             </p>
           </div>
         </footer>
