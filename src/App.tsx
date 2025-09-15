@@ -71,14 +71,12 @@ function App() {
 
   return (
     <div className="min-h-screen relative">
-      {/* Video Background */}
+      {/* Image Background */}
       <div className="fixed inset-0 z-0">
-        <video
-          autoPlay
-          muted
-          loop
+        <img
           className="w-full h-full object-cover"
-          src="/background.mp4"
+          src="/background.webp"
+          alt="Background"
         />
         <div className="absolute inset-0 bg-black bg-opacity-20" />
       </div>
@@ -89,7 +87,6 @@ function App() {
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
               <Stethoscope className="w-8 h-8 text-blue-600 mr-3" />
-              <span className="text-xl font-bold text-gray-800">Vacinação DRC</span>
             </div>
             
             {/* Desktop Navigation */}
@@ -279,13 +276,13 @@ function App() {
             
             <div className="flex space-x-1 mb-8 border-b border-gray-200">
               <button
-                className={`py-2 px-4 text-sm font-bold ${activeTab === 'recommended' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
+                className={`py-2 px-4 text-sm font-bold ${activeTab === 'recommended' ? 'border-b-2 border-green-600 text-green-600' : 'text-gray-500 hover:text-gray-700'}`}
                 onClick={() => setActiveTab('recommended')}
               >
                 Vacinas Recomendadas
               </button>
               <button
-                className={`py-2 px-4 text-sm font-bold ${activeTab === 'evaluate' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
+                className={`py-2 px-4 text-sm font-bold ${activeTab === 'evaluate' ? 'border-b-2 border-yellow-600 text-yellow-600' : 'text-gray-500 hover:text-gray-700'}`}
                 onClick={() => setActiveTab('evaluate')}
               >
                 Vacinas a Avaliar
