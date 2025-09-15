@@ -135,7 +135,7 @@ function App() {
       {/* Main Content */}
       <main className="relative z-10 pt-20">
         {/* Section 1: Welcome */}
-        <section id="boas-vindas" className="py-16 bg-blue-600 bg-opacity-90">
+        <section id="boas-vindas" className="py-16 bg-blue-600 bg-opacity-80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -163,7 +163,7 @@ function App() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <p className="text-white text-lg mb-4">Ouça o podcast sobre o tema</p>
+                  <p className="text-white text-lg mb-4">Ouça o podcast completo sobre o tema!</p>
                   <audio 
                     controls 
                     className="w-full bg-white rounded-lg shadow-lg"
@@ -497,7 +497,7 @@ function App() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <FileText className="w-12 h-12 text-blue-600 mx-auto mb-4" />
             <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
-              Baixe o folder e Ajude na Divulgação!
+              Baixe o Folder e Ajude na Divulgação!
             </h2>
             
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -525,6 +525,10 @@ function App() {
             </div>
           </div>
         </section>
+
+        <div className="bg-white py-12 w-full z-20 opacity-100">
+          <div className="h-px bg-blue-600 max-w-4xl mx-auto"></div>
+        </div>
 
         {/* Section 10: References */}
         <section id="referencias" className="py-16 bg-white">
