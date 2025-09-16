@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { 
   Menu, 
   X, 
@@ -9,9 +9,6 @@ import {
   Download,
   CheckCircle,
   AlertTriangle,
-  XCircle,
-  ChevronDown,
-  ChevronUp,
   ExternalLink,
   Stethoscope,
   Activity,
@@ -212,7 +209,7 @@ function App() {
                 <Shield className="w-8 h-8 text-red-500 flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-2">Disfunção Imunológica</h3>
-                  <p className="text-gray-600">A uremia (acúmulo de toxinas no sangue), que ocorre devido a deficiência de filtração e eliminação renal, causa uma deficiência nas respostas de defesa do corpo, o que faz com que esses paciente fiquem mais vulnerávieis a infecções.</p>
+                  <p className="text-gray-600">A uremia (acúmulo de toxinas no sangue), que ocorre devido a deficiência renal, causa uma deficiência nas respostas de defesa do corpo, o que faz com que esses pacientes fiquem mais vulnerávieis a infecções.</p>
                 </div>
               </div>
               
